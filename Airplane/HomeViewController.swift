@@ -7,7 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+///protocolo hereda de la clase class
+protocol HomeView: class{
+    
+}
+
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,5 +20,9 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension HomeViewController: HomeView{
+    
 }
 

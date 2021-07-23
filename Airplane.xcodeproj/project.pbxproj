@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		1D01023526AA02F300FCD768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01023426AA02F300FCD768 /* AppDelegate.swift */; };
 		1D01023726AA02F300FCD768 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01023626AA02F300FCD768 /* SceneDelegate.swift */; };
-		1D01023926AA02F300FCD768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01023826AA02F300FCD768 /* ViewController.swift */; };
+		1D01023926AA02F300FCD768 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01023826AA02F300FCD768 /* HomeViewController.swift */; };
 		1D01023C26AA02F300FCD768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D01023A26AA02F300FCD768 /* Main.storyboard */; };
 		1D01023E26AA02F400FCD768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D01023D26AA02F400FCD768 /* Assets.xcassets */; };
 		1D01024126AA02F400FCD768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D01023F26AA02F400FCD768 /* LaunchScreen.storyboard */; };
 		1D01024C26AA02F400FCD768 /* AirplaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01024B26AA02F400FCD768 /* AirplaneTests.swift */; };
 		1D01025726AA02F500FCD768 /* AirplaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01025626AA02F500FCD768 /* AirplaneUITests.swift */; };
+		1D01026526AA4F6100FCD768 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01026426AA4F6100FCD768 /* HomePresenter.swift */; };
+		1D01026726AA4F8200FCD768 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01026626AA4F8200FCD768 /* HomeInteractor.swift */; };
+		1D01026926AA4FE700FCD768 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01026826AA4FE700FCD768 /* HomeRouter.swift */; };
+		1D01026B26AA502C00FCD768 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D01026A26AA502C00FCD768 /* HomeAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 		1D01023126AA02F300FCD768 /* Airplane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airplane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D01023426AA02F300FCD768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D01023626AA02F300FCD768 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D01023826AA02F300FCD768 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D01023826AA02F300FCD768 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1D01023B26AA02F300FCD768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D01023D26AA02F400FCD768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D01024026AA02F400FCD768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		1D01025226AA02F500FCD768 /* AirplaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirplaneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D01025626AA02F500FCD768 /* AirplaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneUITests.swift; sourceTree = "<group>"; };
 		1D01025826AA02F500FCD768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D01026426AA4F6100FCD768 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1D01026626AA4F8200FCD768 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		1D01026826AA4FE700FCD768 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		1D01026A26AA502C00FCD768 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,11 @@
 			children = (
 				1D01023426AA02F300FCD768 /* AppDelegate.swift */,
 				1D01023626AA02F300FCD768 /* SceneDelegate.swift */,
-				1D01023826AA02F300FCD768 /* ViewController.swift */,
+				1D01023826AA02F300FCD768 /* HomeViewController.swift */,
+				1D01026426AA4F6100FCD768 /* HomePresenter.swift */,
+				1D01026626AA4F8200FCD768 /* HomeInteractor.swift */,
+				1D01026826AA4FE700FCD768 /* HomeRouter.swift */,
+				1D01026A26AA502C00FCD768 /* HomeAssembly.swift */,
 				1D01023A26AA02F300FCD768 /* Main.storyboard */,
 				1D01023D26AA02F400FCD768 /* Assets.xcassets */,
 				1D01023F26AA02F400FCD768 /* LaunchScreen.storyboard */,
@@ -258,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D01023926AA02F300FCD768 /* ViewController.swift in Sources */,
+				1D01023926AA02F300FCD768 /* HomeViewController.swift in Sources */,
+				1D01026926AA4FE700FCD768 /* HomeRouter.swift in Sources */,
 				1D01023526AA02F300FCD768 /* AppDelegate.swift in Sources */,
 				1D01023726AA02F300FCD768 /* SceneDelegate.swift in Sources */,
+				1D01026726AA4F8200FCD768 /* HomeInteractor.swift in Sources */,
+				1D01026526AA4F6100FCD768 /* HomePresenter.swift in Sources */,
+				1D01026B26AA502C00FCD768 /* HomeAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
