@@ -7,13 +7,18 @@
 
 
 ///Router creado para la navegacion
-import Foundation
+import UIKit
 
 protocol  HomeRouting {
     
 }
 
 class HomeRouter {
+    
+    var view: UIViewController
+    init(view: UIViewController) {
+        self.view = view
+    }
     
 }
 
